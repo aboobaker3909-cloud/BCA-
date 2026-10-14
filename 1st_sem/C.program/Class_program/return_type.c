@@ -17,18 +17,26 @@ printf("Subject 4: ");
 scanf("%f", &marks4);
 printf("Subject 5: ");
 scanf("%f", &marks5);}
-int getTotal(){
+
+
+float getTotal(float m1 , float m2, float m3, float m4 , float m5){
 // Calculate total and average
-total = marks1 + marks2 + marks3 + marks4 + marks5;
+total = m1 + m2 + m3 + m4 + m5;
 return total;
 }
+
+
 void getAverage(){
 average = total / 5;
 }
+
+
 void getCGPA(){
 // Convert average to CGPA
 cgpa = average / 9.5;
 }
+
+
 void displayStudentDetails(){
 // Display results
 printf("\n--- Student CGPA Report ---\n");
@@ -37,12 +45,14 @@ printf("Total Marks : %.2f\n", total);
 printf("Average : %.2f\n", average);
 printf("CGPA : %.2f\n", cgpa);
 }
+
+
 int main() {
+
     getstudentdata();
-    int total=getTotal();
+    float total=getTotal(80 , 75 , 90 , 60 , 85);
     getAverage();
     getCGPA();
     displayStudentDetails();
 
-    printf("the total is : %d",total);
 }

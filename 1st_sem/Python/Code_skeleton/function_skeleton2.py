@@ -43,4 +43,4 @@ print("Subtotal :", subtotal)
 print("Discount :", discount)
 print("GST      :", gst)
 print("Total    :", total)
-print("Each pays:", each, "| Left over:", extra)
+print("Each pays:", each, "| Left over:", extra)3
